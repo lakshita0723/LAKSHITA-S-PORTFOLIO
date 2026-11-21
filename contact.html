@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Lakshita Sharma</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar container" aria-label="Main navigation">
+    <a class="logo" href="index.html">Lakshita<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a class="active" aria-current="page" href="contact.html">Contact</a></li>
+    </ul>
+    <button class="theme-btn" id="themeBtn" aria-label="Switch to light theme">☀️</button>
+  </nav>
+</header>
+<main class="page container">
+
+  <section class="page-heading">
+    <p class="eyebrow">LET'S CONNECT</p>
+    <h1>Contact <span>Me</span></h1>
+    <p class="lead narrow">Have a question or want to connect? Send me a message using the form.</p>
+  </section>
+  <section class="contact-layout">
+    <aside class="info-card contact-info">
+      <div class="card-icon">✉️</div><h2>Contact Details</h2>
+      <p><strong>Email</strong><br><a href="mailto:lakshitask07@gmail.com">lakshitask07@gmail.com</a></p>
+      <p><strong>City</strong><br>Raj Nagar Extension</p>
+      <p class="muted small">This portfolio displays only the contact details provided for the project.</p>
+    </aside>
+    <form class="info-card contact-form" id="contactForm" novalidate>
+      <h2>Send a Message</h2>
+      <label for="name">Your name</label>
+      <input id="name" name="name" type="text" autocomplete="name" placeholder="Enter your name" required>
+      <small class="error" id="nameError"></small>
+
+      <label for="email">Your email</label>
+      <input id="email" name="email" type="email" autocomplete="email" placeholder="Enter your email" required>
+      <small class="error" id="emailError"></small>
+
+      <label for="subject">Subject</label>
+      <input id="subject" name="subject" type="text" placeholder="Enter a subject" required>
+      <small class="error" id="subjectError"></small>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message (at least 10 characters)" required></textarea>
+      <small class="error" id="messageError"></small>
+
+      <button class="btn" type="submit">Validate Message</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      <p class="muted small">Demo form: it validates the fields in your browser but does not send or store messages.</p>
+    </form>
+  </section>
+
+</main>
+<footer class="footer"><p>© <span class="current-year"></span> Lakshita Sharma. All rights reserved.</p></footer>
+</body>
+</html>
